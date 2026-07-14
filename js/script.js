@@ -1,17 +1,15 @@
-const cards=document.querySelectorAll(".card");
+window.addEventListener("scroll",function(){
 
-cards.forEach(card=>{
+const nav=document.querySelector("nav");
 
-card.addEventListener("mouseenter",()=>{
+if(window.scrollY>100){
 
-card.style.transform="translateY(-12px)";
+nav.style.background="#000";
 
-});
+}else{
 
-card.addEventListener("mouseleave",()=>{
+nav.style.background="rgba(0,0,0,.85)";
 
-card.style.transform="translateY(0px)";
-
-});
+}
 
 });
